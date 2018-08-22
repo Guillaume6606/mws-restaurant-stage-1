@@ -183,12 +183,7 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
-.inside header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
+
 .inside #map-container {
   background: blue none repeat scroll 0 0;
   height: 87%;
@@ -197,6 +192,14 @@ nav h1 a {
   top: 80px;
   width: 50%;
 }
+
+.inside header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 .inside #map {
   background-color: #ccc;
   height: 100%;
@@ -276,6 +279,98 @@ nav h1 a {
 
 /* ====================== Responsiveness ====================== */
 
-@media screen and (max width: 500px) {
+/* Fot small-sized devices */
+@media screen and (max-width: 500px) {
+
+/* Adjusting header and nav displays to responsive full screen */
+	.inside header {
+	  width: 100%;
+	}
+
+	#breadcrumb {
+			padding:5%;
+	    list-style: none;
+	    background-color: #eee;
+	    font-size: 17px;
+	    margin: 0;
+	    width: 95%;
+	}
+
+/* Making the map display in full screen rather than half for better visibility
+on small devices and making its position relative. The user can scroll past it
+to maximize screen usage. */
+	.inside #map-container {
+		position:relative;
+		min-height: 220px;
+		margin-top:16%;
+	  height: 45%;
+	  width: 100%;
+	}
+
+	.inside #map {
+	  background-color: #ccc;
+		position: relative;
+	  height: 220px;
+	  width: 100%;
+	}
+
+/* Adjusting the footer for display on small devices */
+
+	.inside #footer {
+		position: relative;
+	  width: 86%;
+	}
+
+/* Preventing the map's control panel from overlapping with the header and navbar*/
+	.leaflet-control-container {
+		position: relative;
+		z-index: 800;
+	}
+
+	#restaurant-name {
+	  font-size: 18pt;
+	  margin: 5%;
+		margin-left: 10%;
+	}
+	#restaurant-img {
+		margin-left:5%;
+	}
+	#restaurant-address {
+		margin-left:5%;
+		margin-bottom:7%;
+	}
+	#restaurant-cuisine {
+	  margin:auto;
+	}
+	#restaurant-container, #reviews-container {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 2%;
+	  padding: 3%;
+	  width: 90%;
+	}
+	#restaurant-container {
+		margin-top: 25%;
+	}
+	#reviews-container {
+		margin-bottom:2%;
+	}
+	#reviews-container h2 {
+	  font-size: 18pt;
+		margin-left: 35%;
+		margin-top:2%;
+	}
+	#reviews-list {
+	  margin: 0;
+	  padding: 0;
+	}
+	#reviews-list li {
+	  margin: 0 auto 15px auto;
+	  padding: 1% 4% 10px 4%;
+	  width: 85%;
+	}
+	#reviews-list li p {
+	  margin: 0 0 10px;
+	}
 
 }
