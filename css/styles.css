@@ -428,6 +428,9 @@ to maximize screen usage. */
 		margin-top: 13%;
 		transition-duration: 1s;
 	}
+	#restaurant-hours {
+	  margin-left:5%;
+	}
 	#reviews-container h2 {
 	  font-size: 22pt;
 		transition-duration: 1s;
@@ -456,5 +459,41 @@ to maximize screen usage. */
 	#restaurants-list li {
 	  width: 320px;
 		transition-duration: 1s;
+	}
+	.inside #footer {
+		padding:2%;
+	  width: 46%;
+		transition-duration: 1s;
+	}
+	#restaurant-name {
+		margin-left:5%;
+		margin-bottom:2%;
+	}
+	#restaurant-img {
+		margin:0 5% 0 5%;
+	}
+	#restaurant-address {
+		margin-left:5%;
+	}
+	#restaurant-cuisine {
+	  margin: 0 5% 20px 5%;
+	}
+	#restaurant-container, #reviews-container {
+	  padding: 15% 0 0 0;
+	  width: 50%;
+	}
+	#reviews-container {
+	  padding: 2% 3% 5% 1%;
+	}
+	#reviews-container h2 {
+		margin-left:5%;
+	}
+	#reviews-list li {
+	  margin: 2% 2% 30px 2%;
+	  padding: 2% 2% 30px 2%;
+	}
+	#restaurant-hours {
+		margin-left:5%;
+		margin-bottom:3%;
 	}
 }
