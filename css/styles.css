@@ -57,6 +57,7 @@ nav {
 }
 nav h1 {
   margin: auto;
+	transition-duration: 1s;
 }
 nav h1 a {
   color: #fff;
@@ -72,6 +73,7 @@ nav h1 a {
     font-size: 17px;
     margin: 0;
     width: calc(50% - 80px);
+		transition-duration: 1s;
 }
 
 /* Display list items side by side */
@@ -116,8 +118,9 @@ nav h1 a {
   font-weight: normal;
   line-height: 1;
 	margin:auto;
-	margin-left: 30%;
+	margin-left: 35%;
 	padding-top:5%;
+	transition-duration: 1s;
 }
 .filter-options select {
   background-color: white;
@@ -125,10 +128,11 @@ nav h1 a {
   font-family: Arial,sans-serif;
   font-size: 11pt;
   letter-spacing: 0;
-  margin: 3%;
+  margin: 1%;
 	margin-left: 10%;
-  padding: 2%;
+  padding: 1%;
   width: 80%;
+	max-width: 850px;
 }
 
 /* ====================== Restaurant Listing ====================== */
@@ -138,6 +142,7 @@ nav h1 a {
   margin: 0;
 	padding:2%;
   text-align: center;
+	transition-duration: 1s;
 }
 #restaurants-list li {
   background-color: #fff;
@@ -148,11 +153,13 @@ nav h1 a {
 	padding:3%;
   text-align: left;
   width: 90%;
+	transition-duration: 1s;
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
   display: block;
   margin: 0;
+	margin-bottom:2%;
   width: 100%;
   min-height: 248px;
 }
@@ -163,23 +170,28 @@ nav h1 a {
   font-weight: 200;
   letter-spacing: 0;
   line-height: 1.3;
+	margin-left: 5%;
+	margin-bottom: 2%;
   text-transform: uppercase;
 }
 #restaurants-list p {
   margin: 0;
+	margin-left: 5%;
   font-size: 11pt;
 }
 #restaurants-list li a {
   background-color: orange;
   border-bottom: 3px solid #eee;
   color: #fff;
-  display: inline-block;
+  display:block;
   font-size: 10pt;
-  margin: 15px 0 0 20%;
+	margin: auto;
+	margin-top: 2%;
   padding: 8px 30px 10px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+	width:80%;
 }
 
 /* ====================== Restaurant Details ====================== */
@@ -191,6 +203,7 @@ nav h1 a {
   right: 0;
   top: 80px;
   width: 50%;
+	transition-duration: 1s;
 }
 
 .inside header {
@@ -279,8 +292,8 @@ nav h1 a {
 
 /* ====================== Responsiveness ====================== */
 
-/* Fot small-sized devices */
-@media screen and (max-width: 500px) {
+/* For small-sized devices */
+@media screen and (max-width: 800px) {
 
 /* Adjusting header and nav displays to responsive full screen */
 	.inside header {
@@ -289,11 +302,8 @@ nav h1 a {
 
 	#breadcrumb {
 			padding:5%;
-	    list-style: none;
-	    background-color: #eee;
-	    font-size: 17px;
-	    margin: 0;
 	    width: 95%;
+			transition-duration: 1s;
 	}
 
 /* Making the map display in full screen rather than half for better visibility
@@ -305,20 +315,22 @@ to maximize screen usage. */
 		margin-top:16%;
 	  height: 45%;
 	  width: 100%;
+		transition-duration: 1s;
 	}
 
 	.inside #map {
-	  background-color: #ccc;
 		position: relative;
 	  height: 220px;
-	  width: 100%;
+		transition-duration: 1s;
 	}
 
 /* Adjusting the footer for display on small devices */
 
 	.inside #footer {
 		position: relative;
-	  width: 86%;
+	  width: 90%;
+		padding:5%;
+		transition-duration: 1s;
 	}
 
 /* Preventing the map's control panel from overlapping with the header and navbar*/
@@ -331,6 +343,7 @@ to maximize screen usage. */
 	  font-size: 18pt;
 	  margin: 5%;
 		margin-left: 10%;
+		transition-duration: 1s;
 	}
 	#restaurant-img {
 		margin-left:5%;
@@ -338,6 +351,7 @@ to maximize screen usage. */
 	#restaurant-address {
 		margin-left:5%;
 		margin-bottom:7%;
+		transition-duration: 1s;
 	}
 	#restaurant-cuisine {
 	  margin:auto;
@@ -359,18 +373,88 @@ to maximize screen usage. */
 	  font-size: 18pt;
 		margin-left: 35%;
 		margin-top:2%;
-	}
-	#reviews-list {
-	  margin: 0;
-	  padding: 0;
+		transition-duration: 1s;
+
 	}
 	#reviews-list li {
 	  margin: 0 auto 15px auto;
 	  padding: 1% 4% 10px 4%;
-	  width: 85%;
 	}
-	#reviews-list li p {
-	  margin: 0 0 10px;
+}
+@media screen and (min-width:397px){
+	nav h1 {
+		padding:3%;
+		transition-duration: 1s;
+	}
+}
+/*=======================================================================================*/
+/* For medium-sized devices */
+@media screen and (min-width: 501px) and (max-width: 800px) {
+
+/* Limiting the growth of the restaurant items */
+	#restaurants-list li {
+	  width: 425px;
+		transition-duration: 1s;
 	}
 
+/*=========================================*/
+	#breadcrumb {
+			padding:2%;
+	    width: 100%;
+			transition-duration: 1s;
+	}
+
+	.inside #map-container {
+		margin-top:8%;
+		height: 400px;
+		transition-duration: 1s;
+	}
+
+	.inside #map {
+	  height: 400px;
+		transition-duration: 1s;
+	}
+
+	#restaurant-name {
+	  font-size: 20pt;
+		margin-left: 22%;
+		transition-duration: 1s;
+	}
+	#restaurant-address {
+		margin-bottom:5%;
+		transition-duration: 1s;
+	}
+	#restaurant-container {
+		margin-top: 13%;
+		transition-duration: 1s;
+	}
+	#reviews-container h2 {
+	  font-size: 22pt;
+		transition-duration: 1s;
+	}
+}
+
+@media screen and (min-width:501px){
+	.filter-options h2 {
+		font-size: 2rem;
+		padding-top:2%;
+		transition-duration: 1s;
+	}
+}
+
+@media screen and (min-width: 801px) {
+
+	nav h1 {
+		padding:25px;
+		transition-duration: 1s;
+	}
+	#restaurants-list {
+		display:flex;
+		flex-wrap: wrap;
+		transition-duration: 1s;
+	}
+	#restaurants-list li {
+	  width: 320px;
+		transition-duration: 1s;
+	}
 }
