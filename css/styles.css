@@ -300,6 +300,7 @@ nav h1 a {
 	  width: 100%;
 	}
 
+/*Making the breadcrumbs responsive*/
 	#breadcrumb {
 			padding:5%;
 	    width: 95%;
@@ -325,7 +326,6 @@ to maximize screen usage. */
 	}
 
 /* Adjusting the footer for display on small devices */
-
 	.inside #footer {
 		position: relative;
 	  width: 90%;
@@ -339,6 +339,7 @@ to maximize screen usage. */
 		z-index: 800;
 	}
 
+/*Adapting the restaurant details pages to small devices in a responsive way*/
 	#restaurant-name {
 	  font-size: 18pt;
 	  margin: 5%;
@@ -381,6 +382,8 @@ to maximize screen usage. */
 	  padding: 1% 4% 10px 4%;
 	}
 }
+
+/*Centers the main title*/
 @media screen and (min-width:397px){
 	nav h1 {
 		padding:3%;
@@ -388,16 +391,17 @@ to maximize screen usage. */
 	}
 }
 /*=======================================================================================*/
+
 /* For medium-sized devices */
 @media screen and (min-width: 501px) and (max-width: 800px) {
 
-/* Limiting the growth of the restaurant items */
+/* Limiting the growth of the restaurant items for a better aspect in home */
 	#restaurants-list li {
 	  width: 425px;
 		transition-duration: 1s;
 	}
 
-/*=========================================*/
+/* Adaptation of the Restaurant details responsiveness to medium sized screens*/
 	#breadcrumb {
 			padding:2%;
 	    width: 100%;
@@ -437,6 +441,7 @@ to maximize screen usage. */
 	}
 }
 
+/* Necessary breakpoint to adapt the dimensions of the filter menu */
 @media screen and (min-width:501px){
 	.filter-options h2 {
 		font-size: 2rem;
@@ -445,12 +450,18 @@ to maximize screen usage. */
 	}
 }
 
+/*=======================================================================================*/
+
+/* For large devices */
 @media screen and (min-width: 801px) {
 
+/*Adapting again the size of the main title for a better aspect*/
 	nav h1 {
 		padding:25px;
 		transition-duration: 1s;
 	}
+
+	/* Making a flex grid of the restaurant items*/
 	#restaurants-list {
 		display:flex;
 		flex-wrap: wrap;
@@ -460,11 +471,15 @@ to maximize screen usage. */
 	  width: 320px;
 		transition-duration: 1s;
 	}
+
+	/* Fixing the width of the footer to prevent it from overlapping*/
 	.inside #footer {
 		padding:2%;
 	  width: 46%;
 		transition-duration: 1s;
 	}
+
+	/* Fixing the restaurant details to prevent overlapping with the map*/
 	#restaurant-name {
 		margin-left:5%;
 		margin-bottom:2%;
