@@ -512,3 +512,7 @@ to maximize screen usage. */
 		margin-bottom:3%;
 	}
 }
+/* Hidding the skip buttons for ARIA */
+.skip {
+	opacity:0;
+}
